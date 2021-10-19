@@ -19,7 +19,7 @@ describe(' Testa a função getMagicCard', () => {
     expect(expected).toEqual(card);               // I & II
     expect(typeof card.types).toEqual(typeof []); // teste III
     expect(card.subtypes.length).toEqual(2);      // teste IV
-    expect(card.rarity).toEqual('Uncommon');      // teste V
+    expect(card.rarity).toEqual(expected.rarity); // teste V
     expect(card.name).toEqual(expected.name);     // teste VI
     
   });
